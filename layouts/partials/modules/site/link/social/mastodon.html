@@ -1,0 +1,8 @@
+{{ with .Site.Params.mastodon }}
+<a id="contact-link-mastodon" class="contact_link" rel="me" aria-label="{{ $.Site.Data.Strings.mastodon }}" href="{{ . }}">
+  <span class="fa-layers fa-fw">
+    <span class="fa fa-solid fa-square"></span>
+    <span class="fab fa-mastodon fa-inverse" data-fa-transform="shrink-5"></span>
+  </span>
+</a>
+{{ end }}
