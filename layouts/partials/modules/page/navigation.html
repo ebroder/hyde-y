@@ -3,6 +3,7 @@
 
     {{ if .PrevInSection }}
     <a class="prev" href="{{ .PrevInSection.Permalink }}" title="{{ .PrevInSection.Title }}">
+      <i class="fa-solid fa-arrow-left"></i>
       {{ .Site.Data.Strings.previous }}
     </a>
     {{end}}
@@ -10,6 +11,7 @@
     {{ if .NextInSection }}
     <a class="next" href="{{ .NextInSection.Permalink }}" title="{{ .NextInSection.Title }}">
       {{ .Site.Data.Strings.next }}
+      <i class="fa-solid fa-arrow-right"></i>
     </a>
     {{end}}
 

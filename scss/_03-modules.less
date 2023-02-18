@@ -59,17 +59,17 @@
     right: 0;
   }
 
-  @media @mq-small {
-    &> .prev:before {
-      font-family: FontAwesome;
-      content: "\f060";
-      margin-right: @small-value;
-    }
+  &> .prev .fa {
+    margin-right: @small-value;
+  }
 
-    &> .next:after {
-      font-family: FontAwesome;
-      content: "\f061";
-      margin-left: @small-value;
+  &> .next .fa {
+    margin-left: @small-value;
+  }
+
+  @media @mq-tiny {
+    &> .prev, .next {
+      --fa-display: none;
     }
   }
 }
